@@ -60,80 +60,6 @@ F 3 "http://infocenter.arm.com/help/topic/com.arm.doc.faqs/attached/13634/cortex
 $EndComp
 $Comp
 L Connector:Conn_01x02_Male J?
-U 1 1 5C3A2B9D
-P 7600 3700
-F 0 "J?" H 7706 3878 50  0000 C CNN
-F 1 "52840 rx rpi tx" H 7706 3787 50  0000 C CNN
-F 2 "" H 7600 3700 50  0001 C CNN
-F 3 "~" H 7600 3700 50  0001 C CNN
-	1    7600 3700
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x02_Male J?
-U 1 1 5C3A2C4F
-P 7600 4050
-F 0 "J?" H 7706 4228 50  0000 C CNN
-F 1 "52840 tx pri rx" H 7706 4137 50  0000 C CNN
-F 2 "" H 7600 4050 50  0001 C CNN
-F 3 "~" H 7600 4050 50  0001 C CNN
-	1    7600 4050
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x02_Male J?
-U 1 1 5C3A387B
-P 7600 4650
-F 0 "J?" H 7706 4828 50  0000 C CNN
-F 1 "sck" H 7706 4737 50  0000 C CNN
-F 2 "" H 7600 4650 50  0001 C CNN
-F 3 "~" H 7600 4650 50  0001 C CNN
-	1    7600 4650
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x02_Male J?
-U 1 1 5C3A3882
-P 7600 5000
-F 0 "J?" H 7706 5178 50  0000 C CNN
-F 1 "mosi" H 7706 5087 50  0000 C CNN
-F 2 "" H 7600 5000 50  0001 C CNN
-F 3 "~" H 7600 5000 50  0001 C CNN
-	1    7600 5000
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x02_Male J?
-U 1 1 5C3A38EB
-P 7600 5400
-F 0 "J?" H 7706 5578 50  0000 C CNN
-F 1 "miso" H 7706 5487 50  0000 C CNN
-F 2 "" H 7600 5400 50  0001 C CNN
-F 3 "~" H 7600 5400 50  0001 C CNN
-	1    7600 5400
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x02_Male J?
-U 1 1 5C3A38F2
-P 7600 5750
-F 0 "J?" H 7706 5928 50  0000 C CNN
-F 1 "ss1" H 7706 5837 50  0000 C CNN
-F 2 "" H 7600 5750 50  0001 C CNN
-F 3 "~" H 7600 5750 50  0001 C CNN
-	1    7600 5750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7800 4850 7800 4750
-Wire Wire Line
-	9750 2600 9950 2600
-Wire Wire Line
-	9950 2600 9950 4650
-Wire Wire Line
-	9950 4650 7800 4650
-$Comp
-L Connector:Conn_01x02_Male J?
 U 1 1 5C3A8360
 P 5000 2150
 F 0 "J?" H 4972 2030 50  0000 R CNN
@@ -151,12 +77,6 @@ Wire Wire Line
 	4450 2050 4800 2050
 Wire Wire Line
 	4800 2150 4450 2150
-Wire Wire Line
-	4450 2950 6500 2950
-Wire Wire Line
-	7800 4850 6500 4850
-Wire Wire Line
-	6500 4850 6500 2950
 Wire Wire Line
 	1750 6600 1750 6150
 Wire Wire Line
@@ -185,4 +105,112 @@ Wire Wire Line
 	1600 6050 1600 5550
 Wire Wire Line
 	1600 5550 1850 5550
+Wire Wire Line
+	6500 4850 6500 2950
+Wire Wire Line
+	4450 2950 6500 2950
+Wire Wire Line
+	9750 2600 9950 2600
+Wire Wire Line
+	9950 2600 9950 4650
+Wire Wire Line
+	7800 4850 6500 4850
+Wire Wire Line
+	9950 4650 7800 4650
+Wire Wire Line
+	7800 4850 7800 4750
+$Comp
+L Connector:Conn_01x02_Male J?
+U 1 1 5C3A38F2
+P 7600 5750
+F 0 "J?" H 7706 5928 50  0000 C CNN
+F 1 "ss1" H 7706 5837 50  0000 C CNN
+F 2 "" H 7600 5750 50  0001 C CNN
+F 3 "~" H 7600 5750 50  0001 C CNN
+	1    7600 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Male J?
+U 1 1 5C3A38EB
+P 7600 5400
+F 0 "J?" H 7706 5578 50  0000 C CNN
+F 1 "miso" H 7706 5487 50  0000 C CNN
+F 2 "" H 7600 5400 50  0001 C CNN
+F 3 "~" H 7600 5400 50  0001 C CNN
+	1    7600 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Male J?
+U 1 1 5C3A3882
+P 7600 5000
+F 0 "J?" H 7706 5178 50  0000 C CNN
+F 1 "mosi" H 7706 5087 50  0000 C CNN
+F 2 "" H 7600 5000 50  0001 C CNN
+F 3 "~" H 7600 5000 50  0001 C CNN
+	1    7600 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Male J?
+U 1 1 5C3A387B
+P 7600 4650
+F 0 "J?" H 7706 4828 50  0000 C CNN
+F 1 "sck" H 7706 4737 50  0000 C CNN
+F 2 "" H 7600 4650 50  0001 C CNN
+F 3 "~" H 7600 4650 50  0001 C CNN
+	1    7600 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Male J?
+U 1 1 5C3A2C4F
+P 5950 900
+F 0 "J?" H 6056 1078 50  0000 C CNN
+F 1 "52840 tx pri rx" H 6056 987 50  0000 C CNN
+F 2 "" H 5950 900 50  0001 C CNN
+F 3 "~" H 5950 900 50  0001 C CNN
+	1    5950 900 
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:Conn_01x02_Male J?
+U 1 1 5C3A2B9D
+P 6400 900
+F 0 "J?" H 6506 1078 50  0000 C CNN
+F 1 "52840 rx rpi tx" H 6506 987 50  0000 C CNN
+F 2 "" H 6400 900 50  0001 C CNN
+F 3 "~" H 6400 900 50  0001 C CNN
+	1    6400 900 
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4450 1150 5850 1150
+Wire Wire Line
+	5850 1150 5850 1100
+Wire Wire Line
+	5950 1100 5950 1450
+Wire Wire Line
+	5950 1450 7100 1450
+Wire Wire Line
+	7100 1450 7100 1300
+Wire Wire Line
+	7100 1300 8150 1300
+Wire Wire Line
+	6400 1100 6400 1350
+Wire Wire Line
+	6400 1350 7000 1350
+Wire Wire Line
+	7000 1350 7000 1200
+Wire Wire Line
+	7000 1200 8150 1200
+Wire Wire Line
+	6300 1100 6300 1400
+Wire Wire Line
+	6300 1400 5750 1400
+Wire Wire Line
+	5750 1400 5750 1250
+Wire Wire Line
+	5750 1250 4450 1250
 $EndSCHEMATC
