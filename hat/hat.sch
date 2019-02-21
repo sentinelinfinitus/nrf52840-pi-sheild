@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:hat-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -62,8 +61,6 @@ Wire Wire Line
 	1750 6600 1750 6150
 Wire Wire Line
 	1750 6150 1500 6150
-Wire Wire Line
-	1500 6150 1500 5350
 Wire Wire Line
 	1500 5350 1850 5350
 Wire Wire Line
@@ -777,4 +774,11 @@ VSS
 Wire Wire Line
 	3150 6800 3100 6800
 Connection ~ 3150 6800
+Wire Wire Line
+	1550 5200 1500 5200
+Wire Wire Line
+	1500 5200 1500 5350
+Connection ~ 1500 5350
+Wire Wire Line
+	1500 5350 1500 6150
 $EndSCHEMATC
