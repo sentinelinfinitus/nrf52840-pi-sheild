@@ -17,8 +17,8 @@ $EndDescr
 $Sheet
 S 2900 950  1600 1000
 U 5C9FDFE4
-F0 "dafault power" 50
-F1 "dafault power.sch" 50
+F0 "dafault-config" 50
+F1 "dafault-config.sch" 50
 $EndSheet
 $Sheet
 S 1000 950  1550 1000
