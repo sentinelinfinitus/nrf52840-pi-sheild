@@ -65,23 +65,6 @@ F 3 "~" H 1750 2100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SamacSys_Parts:LM2676S-5.0 IC?
-U 1 1 5C878082
-P 3500 1350
-F 0 "IC?" H 4150 1615 50  0000 C CNN
-F 1 "LM2676S-5.0" H 4150 1524 50  0000 C CNN
-F 2 "TO127P1435X457-8N" H 4650 1450 50  0001 L CNN
-F 3 "" H 4650 1350 50  0001 L CNN
-F 4 "IC BUCK 5V 3A" H 4650 1250 50  0001 L CNN "Description"
-F 5 "" H 4650 1150 50  0001 L CNN "Height"
-F 6 "926-LM2676S-50" H 4650 1050 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=926-LM2676S-50" H 4650 950 50  0001 L CNN "Mouser Price/Stock"
-F 8 "Texas Instruments" H 4650 850 50  0001 L CNN "Manufacturer_Name"
-F 9 "LM2676S-5.0" H 4650 750 50  0001 L CNN "Manufacturer_Part_Number"
-	1    3500 1350
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+12V #PWR?
 U 1 1 5C878161
 P 1100 1350
@@ -234,4 +217,21 @@ Wire Wire Line
 	5350 2000 5350 1700
 Wire Wire Line
 	5350 1700 5600 1700
+$Comp
+L SamacSys_Parts:LM2676S-5.0 IC?
+U 1 1 5C7F86EF
+P 3500 1350
+F 0 "IC?" H 4150 1615 50  0000 C CNN
+F 1 "LM2676S-5.0" H 4150 1524 50  0000 C CNN
+F 2 "TO127P1435X457-8N" H 4650 1450 50  0001 L CNN
+F 3 "" H 4650 1350 50  0001 L CNN
+F 4 "IC BUCK 5V 3A" H 4650 1250 50  0001 L CNN "Description"
+F 5 "" H 4650 1150 50  0001 L CNN "Height"
+F 6 "926-LM2676S-50" H 4650 1050 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=926-LM2676S-50" H 4650 950 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Texas Instruments" H 4650 850 50  0001 L CNN "Manufacturer_Name"
+F 9 "LM2676S-5.0" H 4650 750 50  0001 L CNN "Manufacturer_Part_Number"
+	1    3500 1350
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

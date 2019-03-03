@@ -436,10 +436,6 @@ F 3 "~" H 5600 2300 50  0001 C CNN
 	1    5600 2300
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	4300 1400 5400 1400
-Wire Wire Line
-	4300 1300 5400 1300
 Text GLabel 5400 1200 0    50   Input ~ 0
 p0.00
 Text GLabel 5400 1500 0    50   Input ~ 0
@@ -526,47 +522,21 @@ Connection ~ 5400 1400
 Wire Wire Line
 	5400 1400 5600 1400
 Wire Wire Line
-	4500 1500 4300 1500
-Wire Wire Line
-	4300 1600 4500 1600
-Wire Wire Line
-	4500 1700 4300 1700
-Wire Wire Line
 	4300 1800 4500 1800
-Wire Wire Line
-	4500 1900 4300 1900
-Wire Wire Line
-	4500 2000 4300 2000
 Wire Wire Line
 	4300 2100 4500 2100
 Wire Wire Line
-	4500 2400 4300 2400
-Wire Wire Line
 	4300 2500 4500 2500
-Wire Wire Line
-	4500 2600 4300 2600
 Wire Wire Line
 	4300 2700 4500 2700
 Wire Wire Line
-	4500 2800 4300 2800
-Wire Wire Line
 	4300 2900 4500 2900
-Wire Wire Line
-	4500 3000 4300 3000
-Wire Wire Line
-	4300 3200 4500 3200
 Wire Wire Line
 	4500 3300 4300 3300
 Wire Wire Line
-	4300 3400 4500 3400
-Wire Wire Line
 	4500 3500 4300 3500
 Wire Wire Line
-	4300 3600 4500 3600
-Wire Wire Line
 	4500 3700 4300 3700
-Wire Wire Line
-	4300 3800 4500 3800
 Wire Wire Line
 	4500 3900 4300 3900
 Wire Wire Line
@@ -575,10 +545,6 @@ Wire Wire Line
 	4500 4100 4300 4100
 Wire Wire Line
 	4300 4200 4500 4200
-Wire Wire Line
-	4500 4300 4300 4300
-Wire Wire Line
-	4300 4400 4500 4400
 Text GLabel 4500 4600 2    50   Input ~ 0
 P1.00
 Text GLabel 4500 4700 2    50   Input ~ 0
@@ -616,33 +582,17 @@ Wire Wire Line
 Wire Wire Line
 	4500 4700 4300 4700
 Wire Wire Line
-	4300 4800 4500 4800
-Wire Wire Line
-	4500 4900 4300 4900
-Wire Wire Line
 	4500 5000 4300 5000
 Wire Wire Line
 	4300 5100 4500 5100
-Wire Wire Line
-	4500 5200 4300 5200
-Wire Wire Line
-	4300 5300 4500 5300
 Wire Wire Line
 	4500 5400 4300 5400
 Wire Wire Line
 	4300 5500 4500 5500
 Wire Wire Line
-	4500 5600 4300 5600
-Wire Wire Line
-	4300 5700 4500 5700
-Wire Wire Line
 	4500 5800 4300 5800
 Wire Wire Line
 	4300 5900 4500 5900
-Wire Wire Line
-	4500 6000 4300 6000
-Wire Wire Line
-	4300 6100 4500 6100
 Text GLabel 4500 4400 2    50   Input ~ 0
 P0.31
 Text GLabel 4500 3100 2    50   Input ~ 0
@@ -692,4 +642,65 @@ Wire Wire Line
 	8400 3550 8550 3550
 Wire Wire Line
 	8550 3550 8550 3400
+$Comp
+L nrf52840-qiaa:nRF52840-QIAA U?
+U 1 1 5C7CF4B7
+P 3200 3700
+F 0 "U?" H 3200 6387 60  0000 C CNN
+F 1 "nRF52840-QIAA" H 3200 6281 60  0000 C CNN
+F 2 "" H 3300 3600 60  0001 C CNN
+F 3 "" H 3300 3600 60  0001 C CNN
+	1    3200 3700
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 1400 5400 1400
+Wire Wire Line
+	4300 1300 5400 1300
+Wire Wire Line
+	4300 1500 4500 1500
+Wire Wire Line
+	4300 1600 4500 1600
+Wire Wire Line
+	4300 1700 4500 1700
+Wire Wire Line
+	4300 1900 4500 1900
+Wire Wire Line
+	4300 2000 4500 2000
+Wire Wire Line
+	4300 2400 4500 2400
+Wire Wire Line
+	4300 2600 4500 2600
+Wire Wire Line
+	4300 2800 4500 2800
+Wire Wire Line
+	4300 3000 4500 3000
+Wire Wire Line
+	4300 3200 4500 3200
+Wire Wire Line
+	4300 3400 4500 3400
+Wire Wire Line
+	4300 3600 4500 3600
+Wire Wire Line
+	4300 3800 4500 3800
+Wire Wire Line
+	4300 4300 4500 4300
+Wire Wire Line
+	4300 4400 4500 4400
+Wire Wire Line
+	4300 4800 4500 4800
+Wire Wire Line
+	4300 4900 4500 4900
+Wire Wire Line
+	4300 5200 4500 5200
+Wire Wire Line
+	4300 5300 4500 5300
+Wire Wire Line
+	4300 5600 4500 5600
+Wire Wire Line
+	4300 5700 4500 5700
+Wire Wire Line
+	4300 6000 4500 6000
+Wire Wire Line
+	4300 6100 4500 6100
 $EndSCHEMATC
