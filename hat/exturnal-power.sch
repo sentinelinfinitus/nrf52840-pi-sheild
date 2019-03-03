@@ -1,0 +1,237 @@
+EESchema Schematic File Version 4
+LIBS:hat-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text GLabel 7500 1900 2    50   Input ~ 0
+rpi(5v)(pin2)
+Text GLabel 7500 1100 2    50   Input ~ 0
+rpi(GND)(pin6)
+$Comp
+L pspice:DIODE D?
+U 1 1 5C8775C8
+P 7150 1900
+F 0 "D?" H 7150 1635 50  0000 C CNN
+F 1 "ZVD" H 7150 1726 50  0000 C CNN
+F 2 "" H 7150 1900 50  0001 C CNN
+F 3 "" H 7150 1900 50  0001 C CNN
+	1    7150 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7350 1900 7500 1900
+$Comp
+L pspice:CAP C?
+U 1 1 5C8776E3
+P 2450 2050
+F 0 "C?" H 2628 2096 50  0000 L CNN
+F 1 "0.47uf" H 2628 2005 50  0000 L CNN
+F 2 "" H 2450 2050 50  0001 C CNN
+F 3 "" H 2450 2050 50  0001 C CNN
+	1    2450 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1 C?
+U 1 1 5C877F34
+P 1100 2100
+F 0 "C?" H 1215 2146 50  0000 L CNN
+F 1 "15uf/50v" H 1215 2055 50  0000 L CNN
+F 2 "" H 1100 2100 50  0001 C CNN
+F 3 "~" H 1100 2100 50  0001 C CNN
+	1    1100 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1 C?
+U 1 1 5C877FA6
+P 1750 2100
+F 0 "C?" H 1865 2146 50  0000 L CNN
+F 1 "15uf/50v" H 1865 2055 50  0000 L CNN
+F 2 "" H 1750 2100 50  0001 C CNN
+F 3 "~" H 1750 2100 50  0001 C CNN
+	1    1750 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L SamacSys_Parts:LM2676S-5.0 IC?
+U 1 1 5C878082
+P 3500 1350
+F 0 "IC?" H 4150 1615 50  0000 C CNN
+F 1 "LM2676S-5.0" H 4150 1524 50  0000 C CNN
+F 2 "TO127P1435X457-8N" H 4650 1450 50  0001 L CNN
+F 3 "" H 4650 1350 50  0001 L CNN
+F 4 "IC BUCK 5V 3A" H 4650 1250 50  0001 L CNN "Description"
+F 5 "" H 4650 1150 50  0001 L CNN "Height"
+F 6 "926-LM2676S-50" H 4650 1050 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=926-LM2676S-50" H 4650 950 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Texas Instruments" H 4650 850 50  0001 L CNN "Manufacturer_Name"
+F 9 "LM2676S-5.0" H 4650 750 50  0001 L CNN "Manufacturer_Part_Number"
+	1    3500 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR?
+U 1 1 5C878161
+P 1100 1350
+F 0 "#PWR?" H 1100 1200 50  0001 C CNN
+F 1 "+12V" H 1115 1523 50  0001 C CNN
+F 2 "" H 1100 1350 50  0001 C CNN
+F 3 "" H 1100 1350 50  0001 C CNN
+F 4 "8v-40v" H 1115 1523 50  0000 C CNN "power input"
+	1    1100 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 5C8798B5
+P 5600 1950
+F 0 "D?" V 5554 2029 50  0000 L CNN
+F 1 "SR305" V 5645 2029 50  0000 L CNN
+F 2 "" H 5600 1950 50  0001 C CNN
+F 3 "~" H 5600 1950 50  0001 C CNN
+	1    5600 1950
+	0    1    1    0   
+$EndComp
+$Comp
+L pspice:CAP C?
+U 1 1 5C87999F
+P 5600 1350
+F 0 "C?" H 5422 1304 50  0000 R CNN
+F 1 "0.01uf" H 5422 1395 50  0000 R CNN
+F 2 "" H 5600 1350 50  0001 C CNN
+F 3 "" H 5600 1350 50  0001 C CNN
+	1    5600 1350
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:L L?
+U 1 1 5C87ADF0
+P 6200 1700
+F 0 "L?" V 6390 1700 50  0000 C CNN
+F 1 "10uH" V 6299 1700 50  0000 C CNN
+F 2 "" H 6200 1700 50  0001 C CNN
+F 3 "~" H 6200 1700 50  0001 C CNN
+	1    6200 1700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:CP1 C?
+U 1 1 5C87B06D
+P 6400 1950
+F 0 "C?" H 6515 1996 50  0000 L CNN
+F 1 "180uf/16v" H 6515 1905 50  0000 L CNN
+F 2 "" H 6400 1950 50  0001 C CNN
+F 3 "~" H 6400 1950 50  0001 C CNN
+	1    6400 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 1700 6400 1700
+Wire Wire Line
+	6400 1700 6400 1800
+Wire Wire Line
+	6400 1700 6950 1700
+Wire Wire Line
+	6950 1700 6950 1900
+Connection ~ 6400 1700
+Wire Wire Line
+	6050 1700 5600 1700
+Wire Wire Line
+	5600 1700 5600 1800
+Wire Wire Line
+	5600 1600 5600 1700
+Connection ~ 5600 1700
+Wire Wire Line
+	4800 1450 5150 1450
+Wire Wire Line
+	6400 1700 6400 800 
+Wire Wire Line
+	6400 800  5150 800 
+Wire Wire Line
+	5150 800  5150 1450
+Wire Wire Line
+	5600 1100 3400 1100
+Wire Wire Line
+	3400 1100 3400 1550
+Wire Wire Line
+	3400 1550 3500 1550
+$Comp
+L power:GNDREF #PWR?
+U 1 1 5C87B557
+P 4050 2300
+F 0 "#PWR?" H 4050 2050 50  0001 C CNN
+F 1 "GNDREF" H 4055 2127 50  0000 C CNN
+F 2 "" H 4050 2300 50  0001 C CNN
+F 3 "" H 4050 2300 50  0001 C CNN
+	1    4050 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5600 2100 4050 2100
+Wire Wire Line
+	4050 2100 4050 2300
+Wire Wire Line
+	2450 2300 3750 2300
+Wire Wire Line
+	3750 2300 3750 2100
+Wire Wire Line
+	3750 2100 4050 2100
+Connection ~ 4050 2100
+Wire Wire Line
+	2450 2300 1750 2300
+Wire Wire Line
+	1750 2300 1750 2250
+Connection ~ 2450 2300
+Wire Wire Line
+	1750 2300 1100 2300
+Wire Wire Line
+	1100 2300 1100 2250
+Connection ~ 1750 2300
+Wire Wire Line
+	1100 1950 1100 1650
+Wire Wire Line
+	1100 1650 1750 1650
+Wire Wire Line
+	2450 1650 2450 1800
+Connection ~ 1100 1650
+Wire Wire Line
+	1100 1650 1100 1350
+Wire Wire Line
+	1750 1950 1750 1650
+Connection ~ 1750 1650
+Wire Wire Line
+	1750 1650 2450 1650
+Wire Wire Line
+	2450 1650 2450 1450
+Wire Wire Line
+	2450 1450 3500 1450
+Connection ~ 2450 1650
+Wire Wire Line
+	4800 1650 4800 1900
+Wire Wire Line
+	4800 1900 4050 1900
+Wire Wire Line
+	4050 1900 4050 2100
+Wire Wire Line
+	3500 1350 3150 1350
+Wire Wire Line
+	3150 1350 3150 2000
+Wire Wire Line
+	3150 2000 5350 2000
+Wire Wire Line
+	5350 2000 5350 1700
+Wire Wire Line
+	5350 1700 5600 1700
+$EndSCHEMATC

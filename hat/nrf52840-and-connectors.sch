@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 3
+Sheet 3 4
 Title ""
 Date ""
 Rev ""
@@ -353,6 +353,7 @@ U 1 1 5CD8A302
 P -10200 -1850
 AR Path="/5C9FDFE4/5CD8A302" Ref="#PWR?"  Part="1" 
 AR Path="/5CD8A302" Ref="#PWR?"  Part="1" 
+AR Path="/5CD5D522/5CD8A302" Ref="#PWR?"  Part="1" 
 F 0 "#PWR?" H -10200 -2100 50  0001 C CNN
 F 1 "Earth" H -10200 -2000 50  0001 C CNN
 F 2 "" H -10200 -1850 50  0001 C CNN
@@ -1029,6 +1030,7 @@ U 1 1 5CD957DC
 P 700 5650
 AR Path="/5C9FDFE4/5CD957DC" Ref="#PWR?"  Part="1" 
 AR Path="/5CD957DC" Ref="#PWR?"  Part="1" 
+AR Path="/5CD5D522/5CD957DC" Ref="#PWR?"  Part="1" 
 F 0 "#PWR?" H 700 5400 50  0001 C CNN
 F 1 "Earth" H 700 5500 50  0001 C CNN
 F 2 "" H 700 5650 50  0001 C CNN
@@ -1366,4 +1368,16 @@ Wire Wire Line
 	2100 1600 1950 1600
 Wire Wire Line
 	2100 1700 1950 1700
+Text GLabel 8100 750  0    50   Input ~ 0
+rpi(5v)(pin2)
+Text GLabel 8400 3550 0    50   Input ~ 0
+rpi(GND)(pin6)
+Wire Wire Line
+	8100 750  8750 750 
+Wire Wire Line
+	8750 750  8750 800 
+Wire Wire Line
+	8400 3550 8550 3550
+Wire Wire Line
+	8550 3550 8550 3400
 $EndSCHEMATC
