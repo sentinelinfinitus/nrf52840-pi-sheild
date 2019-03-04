@@ -363,6 +363,82 @@ X 2 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
+# Device:R
+#
+DEF Device:R R 0 0 N Y 1 F N
+F0 "R" 80 0 50 V V C CNN
+F1 "Device:R" 0 0 50 V V C CNN
+F2 "" -70 0 50 V I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ R_*
+$ENDFPLIST
+DRAW
+S -40 -100 40 100 0 1 10 N
+X ~ 1 0 150 50 D 50 50 1 1 P
+X ~ 2 0 -150 50 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# SamacSys_Parts:DMG2305UX-7
+#
+DEF SamacSys_Parts:DMG2305UX-7 Q 0 30 Y Y 1 F N
+F0 "Q" 450 150 50 H V L CNN
+F1 "SamacSys_Parts:DMG2305UX-7" 450 50 50 H V L CNN
+F2 "SOT96P240X100-3N" 450 -50 50 H I L CNN
+F3 "https://componentsearchengine.com/Datasheets/1/DMG2305UX-7.pdf" 450 -150 50 H I L CNN
+F4 "MOSFET P-Ch 20V 5A Enhancement SOT23 Diodes Inc DMG2305UX-7 P-channel MOSFET Transistor, -3.3 A, -20 V, 3-Pin SOT-23" 450 -250 50 H I L CNN "Description"
+F5 "1" 450 -350 50 H I L CNN "Height"
+F6 "621-DMG2305UX-7" 450 -450 50 H I L CNN "Mouser Part Number"
+F7 "https://www.mouser.com/Search/Refine.aspx?Keyword=621-DMG2305UX-7" 450 -550 50 H I L CNN "Mouser Price/Stock"
+F8 "Diodes Inc." 450 -650 50 H I L CNN "Manufacturer_Name"
+F9 "DMG2305UX-7" 450 -750 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+C 250 100 150 0 1 10 N
+P 2 0 1 6 230 -20 230 20 N
+P 2 0 1 6 230 0 300 0 N
+P 2 0 1 6 230 80 230 120 N
+P 2 0 1 6 230 220 230 180 N
+P 2 0 1 6 300 100 230 100 N
+P 2 0 1 6 300 100 300 -100 N
+P 2 0 1 6 300 200 230 200 N
+P 2 0 1 6 300 200 300 300 N
+P 2 0 1 6 320 80 360 80 N
+P 3 0 1 6 100 0 200 0 200 200 N
+P 3 0 1 6 340 80 340 0 300 0 N
+P 3 0 1 6 340 120 340 200 300 200 N
+P 4 0 1 10 300 100 260 120 260 80 300 100 F
+P 4 0 1 10 340 80 320 120 360 120 340 80 F
+X ~ 1 0 0 100 R 50 50 0 0 B
+X ~ 2 300 -200 100 U 50 50 0 0 B
+X ~ 3 300 400 100 D 50 50 0 0 B
+ENDDRAW
+ENDDEF
+#
+# SamacSys_Parts:DMMT5401-7-F
+#
+DEF SamacSys_Parts:DMMT5401-7-F IC 0 30 Y Y 1 F N
+F0 "IC" 750 300 50 H V L CNN
+F1 "SamacSys_Parts:DMMT5401-7-F" 750 200 50 H V L CNN
+F2 "SOT95P275X110-6N" 750 100 50 H I L CNN
+F3 "https://componentsearchengine.com/Datasheets/1/DMMT5401-7-F.pdf" 750 0 50 H I L CNN
+F4 "Transistor Dual PNP 150V 0.2A SOT26-6 Diodes Inc DMMT5401-7-F Dual PNP Bipolar Transistor, -200 mA, -150 V, 6-Pin SOT-26" 750 -100 50 H I L CNN "Description"
+F5 "1.1" 750 -200 50 H I L CNN "Height"
+F6 "621-DMMT5401-7-F" 750 -300 50 H I L CNN "Mouser Part Number"
+F7 "https://www.mouser.com/Search/Refine.aspx?Keyword=621-DMMT5401-7-F" 750 -400 50 H I L CNN "Mouser Price/Stock"
+F8 "Diodes Inc." 750 -500 50 H I L CNN "Manufacturer_Name"
+F9 "DMMT5401-7-F" 750 -600 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+P 5 0 1 6 200 100 700 100 700 -300 200 -300 200 100 N
+X C1 1 0 0 200 R 50 50 0 0 B
+X B1 2 0 -100 200 R 50 50 0 0 B
+X B2 3 0 -200 200 R 50 50 0 0 B
+X C2 4 900 -200 200 L 50 50 0 0 B
+X E2 5 900 -100 200 L 50 50 0 0 B
+X E1 6 900 0 200 L 50 50 0 0 B
+ENDDRAW
+ENDDEF
+#
 # SamacSys_Parts:LM2676S-5.0
 #
 DEF SamacSys_Parts:LM2676S-5.0 IC 0 30 Y Y 1 F N
@@ -534,21 +610,6 @@ P 2 0 1 0 -150 -50 150 -50 N
 P 2 0 1 0 -150 50 150 50 N
 X ~ 1 0 250 200 D 40 40 1 1 P
 X ~ 2 0 -250 200 U 40 40 1 1 P
-ENDDRAW
-ENDDEF
-#
-# pspice:DIODE
-#
-DEF pspice:DIODE D 0 40 Y N 1 F N
-F0 "D" 0 150 50 H V C CNN
-F1 "pspice:DIODE" 0 -175 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-P 2 0 1 0 75 100 75 -100 N
-P 3 0 1 0 -75 100 -75 -100 75 0 F
-X K 1 -200 0 150 R 50 50 1 1 I
-X A 2 200 0 150 L 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #

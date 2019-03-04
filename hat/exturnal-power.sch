@@ -14,23 +14,10 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text GLabel 7500 1900 2    50   Input ~ 0
+Text GLabel 10100 1900 2    50   Input ~ 0
 rpi(5v)(pin2)
-Text GLabel 7500 1100 2    50   Input ~ 0
+Text GLabel 10100 1100 2    50   Input ~ 0
 rpi(GND)(pin6)
-$Comp
-L pspice:DIODE D?
-U 1 1 5C8775C8
-P 7150 1900
-F 0 "D?" H 7150 1635 50  0000 C CNN
-F 1 "ZVD" H 7150 1726 50  0000 C CNN
-F 2 "" H 7150 1900 50  0001 C CNN
-F 3 "" H 7150 1900 50  0001 C CNN
-	1    7150 1900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7350 1900 7500 1900
 $Comp
 L pspice:CAP C?
 U 1 1 5C8776E3
@@ -124,10 +111,6 @@ Wire Wire Line
 	6350 1700 6400 1700
 Wire Wire Line
 	6400 1700 6400 1800
-Wire Wire Line
-	6400 1700 6950 1700
-Wire Wire Line
-	6950 1700 6950 1900
 Connection ~ 6400 1700
 Wire Wire Line
 	6050 1700 5600 1700
@@ -234,4 +217,151 @@ F 9 "LM2676S-5.0" H 4650 750 50  0001 L CNN "Manufacturer_Part_Number"
 	1    3500 1350
 	1    0    0    -1  
 $EndComp
+$Comp
+L power:GNDREF #PWR?
+U 1 1 5C8067CD
+P 8050 2950
+F 0 "#PWR?" H 8050 2700 50  0001 C CNN
+F 1 "GNDREF" H 8055 2777 50  0000 C CNN
+F 2 "" H 8050 2950 50  0001 C CNN
+F 3 "" H 8050 2950 50  0001 C CNN
+	1    8050 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDREF #PWR?
+U 1 1 5C806E0E
+P 8450 2950
+F 0 "#PWR?" H 8450 2700 50  0001 C CNN
+F 1 "GNDREF" H 8455 2777 50  0000 C CNN
+F 2 "" H 8450 2950 50  0001 C CNN
+F 3 "" H 8450 2950 50  0001 C CNN
+	1    8450 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 2100 5600 2100
+Connection ~ 5600 2100
+$Comp
+L SamacSys_Parts:DMG2305UX-7 Q?
+U 1 1 5C807BC9
+P 8200 1200
+F 0 "Q?" V 8767 1300 50  0000 C CNN
+F 1 "DMG2305UX-7" V 8676 1300 50  0000 C CNN
+F 2 "SOT96P240X100-3N" H 8650 1150 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/DMG2305UX-7.pdf" H 8650 1050 50  0001 L CNN
+F 4 "MOSFET P-Ch 20V 5A Enhancement SOT23 Diodes Inc DMG2305UX-7 P-channel MOSFET Transistor, -3.3 A, -20 V, 3-Pin SOT-23" H 8650 950 50  0001 L CNN "Description"
+F 5 "1" H 8650 850 50  0001 L CNN "Height"
+F 6 "621-DMG2305UX-7" H 8650 750 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=621-DMG2305UX-7" H 8650 650 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Diodes Inc." H 8650 550 50  0001 L CNN "Manufacturer_Name"
+F 9 "DMG2305UX-7" H 8650 450 50  0001 L CNN "Manufacturer_Part_Number"
+	1    8200 1200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L SamacSys_Parts:DMMT5401-7-F IC?
+U 1 1 5C807D70
+P 7600 2200
+F 0 "IC?" H 8050 2465 50  0000 C CNN
+F 1 "DMMT5401-7-F" H 8050 2374 50  0000 C CNN
+F 2 "SOT95P275X110-6N" H 8350 2300 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/DMMT5401-7-F.pdf" H 8350 2200 50  0001 L CNN
+F 4 "Transistor Dual PNP 150V 0.2A SOT26-6 Diodes Inc DMMT5401-7-F Dual PNP Bipolar Transistor, -200 mA, -150 V, 6-Pin SOT-26" H 8350 2100 50  0001 L CNN "Description"
+F 5 "1.1" H 8350 2000 50  0001 L CNN "Height"
+F 6 "621-DMMT5401-7-F" H 8350 1900 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=621-DMMT5401-7-F" H 8350 1800 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Diodes Inc." H 8350 1700 50  0001 L CNN "Manufacturer_Name"
+F 9 "DMMT5401-7-F" H 8350 1600 50  0001 L CNN "Manufacturer_Part_Number"
+	1    7600 2200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5C80BF79
+P 7700 2600
+F 0 "R?" H 7770 2646 50  0000 L CNN
+F 1 "10k 1% 1005" H 7770 2555 50  0000 L CNN
+F 2 "" V 7630 2600 50  0001 C CNN
+F 3 "~" H 7700 2600 50  0001 C CNN
+	1    7700 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5C80BFD7
+P 8450 2600
+F 0 "R?" H 8520 2646 50  0000 L CNN
+F 1 "47k 1% 1005" H 8520 2555 50  0000 L CNN
+F 2 "" V 8380 2600 50  0001 C CNN
+F 3 "~" H 8450 2600 50  0001 C CNN
+	1    8450 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 1700 6950 1700
+Wire Wire Line
+	6950 900  7800 900 
+Wire Wire Line
+	7600 1300 6950 1300
+Wire Wire Line
+	6950 900  6950 1300
+Connection ~ 6950 1300
+Wire Wire Line
+	6950 1300 6950 1700
+Wire Wire Line
+	7700 1300 7700 1200
+Wire Wire Line
+	7700 1200 8000 1200
+Wire Wire Line
+	8000 1200 8000 1350
+Wire Wire Line
+	8000 1350 8650 1350
+Wire Wire Line
+	8650 1350 8650 900 
+Wire Wire Line
+	8650 900  8400 900 
+Wire Wire Line
+	7800 1300 7900 1300
+Wire Wire Line
+	7900 1300 7900 1450
+Wire Wire Line
+	7900 1450 8450 1450
+Wire Wire Line
+	8450 1450 8450 2200
+Wire Wire Line
+	8200 1200 8200 2200
+Wire Wire Line
+	8200 2200 8450 2200
+Connection ~ 8450 2200
+Wire Wire Line
+	8450 2200 8450 2450
+Wire Wire Line
+	7600 2200 7600 2350
+Wire Wire Line
+	7600 2350 7700 2350
+Wire Wire Line
+	7800 2350 7800 2200
+Wire Wire Line
+	7700 2200 7700 2350
+Connection ~ 7700 2350
+Wire Wire Line
+	7700 2350 7800 2350
+Wire Wire Line
+	7700 2350 7700 2450
+Wire Wire Line
+	7700 2750 7700 2850
+Wire Wire Line
+	7700 2850 8050 2850
+Wire Wire Line
+	8050 2850 8050 2950
+Wire Wire Line
+	8450 2750 8450 2950
+Wire Wire Line
+	8650 1350 9450 1350
+Wire Wire Line
+	9450 1350 9450 1900
+Wire Wire Line
+	9450 1900 10100 1900
+Connection ~ 8650 1350
 $EndSCHEMATC
