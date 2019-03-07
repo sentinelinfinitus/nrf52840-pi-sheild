@@ -275,7 +275,7 @@ Text GLabel 10800 5800 2    50   Input ~ 0
 P0.31
 Text GLabel 1600 5450 3    50   Input ~ 0
 XC1
-Text GLabel 1600 5050 1    50   Input ~ 0
+Text GLabel 1350 4800 1    50   Input ~ 0
 XC2
 Wire Wire Line
 	1800 5450 1600 5450
@@ -290,10 +290,6 @@ F 3 "~" H 900 5250 50  0001 C CNN
 	1    900  5250
 	0    -1   1    0   
 $EndComp
-Wire Wire Line
-	1350 5100 1600 5100
-Wire Wire Line
-	1600 5100 1600 5050
 Wire Wire Line
 	1600 5450 1600 5400
 Wire Wire Line
@@ -321,8 +317,6 @@ F 3 "~" H 1100 4800 50  0001 C CNN
 	0    1    -1   0   
 $EndComp
 Wire Wire Line
-	1350 5100 1350 4800
-Wire Wire Line
 	1350 4800 1200 4800
 Wire Wire Line
 	1000 4800 1000 5100
@@ -342,8 +336,8 @@ U 1 1 5CD957DC
 P 700 5650
 AR Path="/5C9FDFE4/5CD957DC" Ref="#PWR?"  Part="1" 
 AR Path="/5CD957DC" Ref="#PWR?"  Part="1" 
-AR Path="/5CD5D522/5CD957DC" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 700 5400 50  0001 C CNN
+AR Path="/5CD5D522/5CD957DC" Ref="#PWR0117"  Part="1" 
+F 0 "#PWR0117" H 700 5400 50  0001 C CNN
 F 1 "Earth" H 700 5500 50  0001 C CNN
 F 2 "" H 700 5650 50  0001 C CNN
 F 3 "~" H 700 5650 50  0001 C CNN
@@ -384,7 +378,7 @@ ant
 Text GLabel 1950 5850 0    50   Input ~ 0
 Ground (VSS_PA)
 Text GLabel 1950 6000 0    50   Input ~ 0
-VSS
+VSS_b7
 Wire Wire Line
 	2100 1400 1950 1400
 Wire Wire Line
@@ -414,9 +408,7 @@ Wire Wire Line
 Wire Wire Line
 	1800 5300 1800 5450
 Wire Wire Line
-	2100 5050 2100 5200
-Wire Wire Line
-	1600 5050 2100 5050
+	2100 5050 2100 5100
 Wire Wire Line
 	1950 5600 2100 5600
 Wire Wire Line
@@ -703,4 +695,54 @@ Wire Wire Line
 	4300 6000 4500 6000
 Wire Wire Line
 	4300 6100 4500 6100
+$Comp
+L Connector:Conn_ARM_JTAG_SWD_10 J?
+U 1 1 5C8301A2
+P 7200 4750
+F 0 "J?" H 6760 4796 50  0000 R CNN
+F 1 "Conn_ARM_JTAG_SWD_10" H 6760 4705 50  0000 R CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_2x05_P1.27mm_Vertical_SMD" H 7250 4200 50  0001 L TNN
+F 3 "http://infocenter.arm.com/help/topic/com.arm.doc.faqs/attached/13634/cortex_debug_connectors.pdf" V 6850 3500 50  0001 C CNN
+	1    7200 4750
+	1    0    0    -1  
+$EndComp
+Text GLabel 1950 4300 0    50   Input ~ 0
+usbdata+
+Text GLabel 1950 4400 0    50   Input ~ 0
+usbdata-
+Text GLabel 1950 6100 0    50   Input ~ 0
+VSS_BOTT
+Text GLabel 1950 4800 0    50   Input ~ 0
+SWDIO
+Text GLabel 1950 4900 0    50   Input ~ 0
+SWDCLK
+Connection ~ 2100 5100
+Wire Wire Line
+	2100 5100 2100 5200
+Wire Wire Line
+	1350 5100 2100 5100
+Wire Wire Line
+	1350 5100 1350 4800
+Wire Wire Line
+	1950 4900 2100 4900
+Wire Wire Line
+	1950 4800 2100 4800
+Wire Wire Line
+	2100 6100 1950 6100
+Wire Wire Line
+	1950 4400 2100 4400
+Wire Wire Line
+	2100 4300 1950 4300
+Text GLabel 7850 4750 2    50   Input ~ 0
+SWDIO
+Text GLabel 7850 4650 2    50   Input ~ 0
+SWDCLK
+Wire Wire Line
+	7850 4650 7700 4650
+Wire Wire Line
+	7850 4750 7700 4750
+Text GLabel 7850 4450 2    50   Input ~ 0
+P0.18
+Wire Wire Line
+	7850 4450 7700 4450
 $EndSCHEMATC

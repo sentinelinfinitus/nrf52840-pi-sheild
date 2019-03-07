@@ -16,30 +16,10 @@ Comment4 ""
 $EndDescr
 Text GLabel 7900 1800 0    50   Input ~ 0
 VDD(AD23)
-Text GLabel 7900 2850 0    50   Input ~ 0
-VDDH
-Text GLabel 2000 3050 0    50   Input ~ 0
-Vbus
-Text GLabel 2000 2850 0    50   Input ~ 0
-DCC
+Text GLabel 7900 2700 0    50   Input ~ 0
+VDD_HV
 Text GLabel 9450 2700 0    50   Input ~ 0
 DCCH
-Text GLabel 2000 2450 0    50   Input ~ 0
-Ground (VSS_PA)
-Text GLabel 2000 2200 0    50   Input ~ 0
-1.1vsup_decup(dec1)
-Text GLabel 2000 2050 0    50   Input ~ 0
-1.3vsup_decup(rf)(dec2)
-Text GLabel 2000 1900 0    50   Input ~ 0
-psu_decup(dec3)
-Text GLabel 2000 1750 0    50   Input ~ 0
-1.3vsup_decup(dec4)
-Text GLabel 2000 1600 0    50   Input ~ 0
-1.3vsup_decup(flash)(dec5)
-Text GLabel 2000 1450 0    50   Input ~ 0
-1.3vsup_decup2(rf)(dec6)
-Text GLabel 2000 1300 0    50   Input ~ 0
-decusb3.3v
 $Comp
 L Device:C_Small C?
 U 1 1 5CC155B9
@@ -55,19 +35,6 @@ F 3 "~" H 8200 850 50  0001 C CNN
 $EndComp
 $Comp
 L Device:C_Small C?
-U 1 1 5CC155CD
-P 3550 1500
-AR Path="/5CC155CD" Ref="C?"  Part="1" 
-AR Path="/5C9FDFE4/5CC155CD" Ref="C?"  Part="1" 
-F 0 "C?" V 3321 1500 50  0000 C CNN
-F 1 "12pf" V 3412 1500 50  0000 C CNN
-F 2 "" H 3550 1500 50  0001 C CNN
-F 3 "~" H 3550 1500 50  0001 C CNN
-	1    3550 1500
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:C_Small C?
 U 1 1 5CC155E6
 P 8200 1400
 AR Path="/5CC155E6" Ref="C?"  Part="1" 
@@ -77,19 +44,6 @@ F 1 "1.0uF" V 8062 1400 50  0000 C CNN
 F 2 "" H 8200 1400 50  0001 C CNN
 F 3 "~" H 8200 1400 50  0001 C CNN
 	1    8200 1400
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:C_Small C?
-U 1 1 5CC155F4
-P 4100 1550
-AR Path="/5CC155F4" Ref="C?"  Part="1" 
-AR Path="/5C9FDFE4/5CC155F4" Ref="C?"  Part="1" 
-F 0 "C?" V 3871 1550 50  0000 C CNN
-F 1 "12pf" V 3962 1550 50  0000 C CNN
-F 2 "" H 4100 1550 50  0001 C CNN
-F 3 "~" H 4100 1550 50  0001 C CNN
-	1    4100 1550
 	0    1    1    0   
 $EndComp
 $Comp
@@ -130,32 +84,6 @@ F 2 "" H 9650 1050 50  0001 C CNN
 F 3 "~" H 9650 1050 50  0001 C CNN
 	1    9650 1050
 	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C?
-U 1 1 5CC1563E
-P 10100 3800
-AR Path="/5CC1563E" Ref="C?"  Part="1" 
-AR Path="/5C9FDFE4/5CC1563E" Ref="C?"  Part="1" 
-F 0 "C?" V 9871 3800 50  0000 C CNN
-F 1 "12pf" V 9962 3800 50  0000 C CNN
-F 2 "" H 10100 3800 50  0001 C CNN
-F 3 "~" H 10100 3800 50  0001 C CNN
-	1    10100 3800
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:C_Small C?
-U 1 1 5CC15651
-P 10450 3850
-AR Path="/5CC15651" Ref="C?"  Part="1" 
-AR Path="/5C9FDFE4/5CC15651" Ref="C?"  Part="1" 
-F 0 "C?" V 10221 3850 50  0000 C CNN
-F 1 "12pf" V 10312 3850 50  0000 C CNN
-F 2 "" H 10450 3850 50  0001 C CNN
-F 3 "~" H 10450 3850 50  0001 C CNN
-	1    10450 3850
-	0    1    1    0   
 $EndComp
 $Comp
 L Device:C_Small C?
@@ -223,10 +151,10 @@ F 3 "~" H 8200 3500 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:Earth #PWR?
+L power:Earth #PWR0101
 U 1 1 5CC15A29
 P 8450 850
-F 0 "#PWR?" H 8450 600 50  0001 C CNN
+F 0 "#PWR0101" H 8450 600 50  0001 C CNN
 F 1 "Earth" H 8450 700 50  0001 C CNN
 F 2 "" H 8450 850 50  0001 C CNN
 F 3 "~" H 8450 850 50  0001 C CNN
@@ -234,10 +162,10 @@ F 3 "~" H 8450 850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:Earth #PWR?
+L power:Earth #PWR0102
 U 1 1 5CC15A90
 P 8500 1400
-F 0 "#PWR?" H 8500 1150 50  0001 C CNN
+F 0 "#PWR0102" H 8500 1150 50  0001 C CNN
 F 1 "Earth" H 8500 1250 50  0001 C CNN
 F 2 "" H 8500 1400 50  0001 C CNN
 F 3 "~" H 8500 1400 50  0001 C CNN
@@ -245,21 +173,10 @@ F 3 "~" H 8500 1400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:Earth #PWR?
-U 1 1 5CC15AA4
-P 6450 1150
-F 0 "#PWR?" H 6450 900 50  0001 C CNN
-F 1 "Earth" H 6450 1000 50  0001 C CNN
-F 2 "" H 6450 1150 50  0001 C CNN
-F 3 "~" H 6450 1150 50  0001 C CNN
-	1    6450 1150
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:Earth #PWR?
+L power:Earth #PWR0104
 U 1 1 5CC15AB8
 P 8500 2850
-F 0 "#PWR?" H 8500 2600 50  0001 C CNN
+F 0 "#PWR0104" H 8500 2600 50  0001 C CNN
 F 1 "Earth" H 8500 2700 50  0001 C CNN
 F 2 "" H 8500 2850 50  0001 C CNN
 F 3 "~" H 8500 2850 50  0001 C CNN
@@ -267,21 +184,10 @@ F 3 "~" H 8500 2850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:Earth #PWR?
-U 1 1 5CC15ACC
-P 10850 4050
-F 0 "#PWR?" H 10850 3800 50  0001 C CNN
-F 1 "Earth" H 10850 3900 50  0001 C CNN
-F 2 "" H 10850 4050 50  0001 C CNN
-F 3 "~" H 10850 4050 50  0001 C CNN
-	1    10850 4050
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:Earth #PWR?
+L power:Earth #PWR0106
 U 1 1 5CC15AE0
 P 8500 4300
-F 0 "#PWR?" H 8500 4050 50  0001 C CNN
+F 0 "#PWR0106" H 8500 4050 50  0001 C CNN
 F 1 "Earth" H 8500 4150 50  0001 C CNN
 F 2 "" H 8500 4300 50  0001 C CNN
 F 3 "~" H 8500 4300 50  0001 C CNN
@@ -289,10 +195,10 @@ F 3 "~" H 8500 4300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:Earth #PWR?
+L power:Earth #PWR0107
 U 1 1 5CC15AF4
 P 10250 1400
-F 0 "#PWR?" H 10250 1150 50  0001 C CNN
+F 0 "#PWR0107" H 10250 1150 50  0001 C CNN
 F 1 "Earth" H 10250 1250 50  0001 C CNN
 F 2 "" H 10250 1400 50  0001 C CNN
 F 3 "~" H 10250 1400 50  0001 C CNN
@@ -300,10 +206,10 @@ F 3 "~" H 10250 1400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:Earth #PWR?
+L power:Earth #PWR0108
 U 1 1 5CC15B08
 P 10850 1800
-F 0 "#PWR?" H 10850 1550 50  0001 C CNN
+F 0 "#PWR0108" H 10850 1550 50  0001 C CNN
 F 1 "Earth" H 10850 1650 50  0001 C CNN
 F 2 "" H 10850 1800 50  0001 C CNN
 F 3 "~" H 10850 1800 50  0001 C CNN
@@ -311,10 +217,10 @@ F 3 "~" H 10850 1800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:Earth #PWR?
+L power:Earth #PWR0109
 U 1 1 5CC15B1C
 P 8500 3500
-F 0 "#PWR?" H 8500 3250 50  0001 C CNN
+F 0 "#PWR0109" H 8500 3250 50  0001 C CNN
 F 1 "Earth" H 8500 3350 50  0001 C CNN
 F 2 "" H 8500 3500 50  0001 C CNN
 F 3 "~" H 8500 3500 50  0001 C CNN
@@ -322,10 +228,10 @@ F 3 "~" H 8500 3500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:Earth #PWR?
+L power:Earth #PWR0110
 U 1 1 5CC15B30
 P 10250 3000
-F 0 "#PWR?" H 10250 2750 50  0001 C CNN
+F 0 "#PWR0110" H 10250 2750 50  0001 C CNN
 F 1 "Earth" H 10250 2850 50  0001 C CNN
 F 2 "" H 10250 3000 50  0001 C CNN
 F 3 "~" H 10250 3000 50  0001 C CNN
@@ -333,10 +239,10 @@ F 3 "~" H 10250 3000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:Earth #PWR?
+L power:Earth #PWR0111
 U 1 1 5CC15B44
 P 8500 2150
-F 0 "#PWR?" H 8500 1900 50  0001 C CNN
+F 0 "#PWR0111" H 8500 1900 50  0001 C CNN
 F 1 "Earth" H 8500 2000 50  0001 C CNN
 F 2 "" H 8500 2150 50  0001 C CNN
 F 3 "~" H 8500 2150 50  0001 C CNN
@@ -344,10 +250,10 @@ F 3 "~" H 8500 2150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:Earth #PWR?
+L power:Earth #PWR0112
 U 1 1 5CC15B58
 P 8500 1800
-F 0 "#PWR?" H 8500 1550 50  0001 C CNN
+F 0 "#PWR0112" H 8500 1550 50  0001 C CNN
 F 1 "Earth" H 8500 1650 50  0001 C CNN
 F 2 "" H 8500 1800 50  0001 C CNN
 F 3 "~" H 8500 1800 50  0001 C CNN
@@ -355,10 +261,10 @@ F 3 "~" H 8500 1800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:Earth #PWR?
+L power:Earth #PWR0113
 U 1 1 5CC15B6C
 P 8500 3150
-F 0 "#PWR?" H 8500 2900 50  0001 C CNN
+F 0 "#PWR0113" H 8500 2900 50  0001 C CNN
 F 1 "Earth" H 8500 3000 50  0001 C CNN
 F 2 "" H 8500 3150 50  0001 C CNN
 F 3 "~" H 8500 3150 50  0001 C CNN
@@ -366,10 +272,10 @@ F 3 "~" H 8500 3150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:Earth #PWR?
+L power:Earth #PWR0114
 U 1 1 5CC15B80
 P 9650 1400
-F 0 "#PWR?" H 9650 1150 50  0001 C CNN
+F 0 "#PWR0114" H 9650 1150 50  0001 C CNN
 F 1 "Earth" H 9650 1250 50  0001 C CNN
 F 2 "" H 9650 1400 50  0001 C CNN
 F 3 "~" H 9650 1400 50  0001 C CNN
@@ -377,10 +283,10 @@ F 3 "~" H 9650 1400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:Earth #PWR?
+L power:Earth #PWR0115
 U 1 1 5CC15B94
 P 8500 3950
-F 0 "#PWR?" H 8500 3700 50  0001 C CNN
+F 0 "#PWR0115" H 8500 3700 50  0001 C CNN
 F 1 "Earth" H 8500 3800 50  0001 C CNN
 F 2 "" H 8500 3950 50  0001 C CNN
 F 3 "~" H 8500 3950 50  0001 C CNN
@@ -544,10 +450,8 @@ Text GLabel 10050 2400 0    50   Input ~ 0
 1.3vsup_decup(dec4)
 Text GLabel 9400 2150 0    50   Input ~ 0
 DCC
-Text GLabel 2000 3400 0    50   Input ~ 0
-VSS
 Text GLabel 9400 1800 0    50   Input ~ 0
-VSS
+VSS_b7
 $Comp
 L Device:L L?
 U 1 1 5CC9371F
@@ -595,10 +499,10 @@ Wire Wire Line
 Wire Wire Line
 	8100 4300 7900 4300
 $Comp
-L power:Earth #PWR?
+L power:Earth #PWR0116
 U 1 1 5CC9F776
 P 8500 2500
-F 0 "#PWR?" H 8500 2250 50  0001 C CNN
+F 0 "#PWR0116" H 8500 2250 50  0001 C CNN
 F 1 "Earth" H 8500 2350 50  0001 C CNN
 F 2 "" H 8500 2500 50  0001 C CNN
 F 3 "~" H 8500 2500 50  0001 C CNN
@@ -663,8 +567,6 @@ Connection ~ 9800 2900
 Wire Wire Line
 	8300 2850 8500 2850
 Wire Wire Line
-	8100 2850 7900 2850
-Wire Wire Line
 	8300 3500 8500 3500
 Wire Wire Line
 	8300 3150 8500 3150
@@ -672,4 +574,15 @@ Wire Wire Line
 	8100 3150 7900 3150
 Wire Wire Line
 	8100 3500 7900 3500
+Text GLabel 7900 2850 0    50   Input ~ 0
+VDDH
+Wire Wire Line
+	8100 2850 8000 2850
+Wire Wire Line
+	7900 2700 8000 2700
+Wire Wire Line
+	8000 2700 8000 2850
+Connection ~ 8000 2850
+Wire Wire Line
+	8000 2850 7900 2850
 $EndSCHEMATC
