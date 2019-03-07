@@ -745,4 +745,14 @@ Text GLabel 7850 4450 2    50   Input ~ 0
 P0.18
 Wire Wire Line
 	7850 4450 7700 4450
+Text GLabel 7200 5500 0    50   Input ~ 0
+VSS_b7
+Wire Wire Line
+	7200 5350 7200 5500
+Text GLabel 7150 3950 0    50   Input ~ 0
+VDD(W1)
+Wire Wire Line
+	7200 4150 7200 3950
+Wire Wire Line
+	7200 3950 7150 3950
 $EndSCHEMATC

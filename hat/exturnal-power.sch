@@ -358,17 +358,6 @@ Wire Wire Line
 Wire Wire Line
 	8450 5950 8450 6150
 Connection ~ 8650 4550
-$Comp
-L Connector:Barrel_Jack J?
-U 1 1 5C7D5EA2
-P 1800 4000
-F 0 "J?" H 1855 4325 50  0000 C CNN
-F 1 "Barrel_Jack" H 1855 4234 50  0000 C CNN
-F 2 "" H 1850 3960 50  0001 C CNN
-F 3 "~" H 1850 3960 50  0001 C CNN
-	1    1800 4000
-	0    -1   1    0   
-$EndComp
 Wire Wire Line
 	1100 4650 1700 4650
 Wire Wire Line
@@ -388,8 +377,6 @@ Wire Wire Line
 Wire Wire Line
 	2700 4100 2700 4300
 Connection ~ 2700 4300
-Wire Wire Line
-	2700 4300 1900 4300
 Wire Wire Line
 	2700 4100 2900 4100
 Wire Notes Line
@@ -420,4 +407,30 @@ Wire Wire Line
 	10000 4650 10000 4750
 Text GLabel 10100 4650 2    50   Input ~ 0
 VDD_HV
+Text GLabel 2900 3900 2    50   Input ~ 0
+VSS_b7
+$Comp
+L Connector:Screw_Terminal_01x02 J?
+U 1 1 5C9922FF
+P 1750 4000
+F 0 "J?" V 1716 3812 50  0000 R CNN
+F 1 "Screw_Terminal_01x02" V 1625 3812 50  0000 R CNN
+F 2 "" H 1750 4000 50  0001 C CNN
+F 3 "~" H 1750 4000 50  0001 C CNN
+	1    1750 4000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1850 4300 1850 4200
+Wire Wire Line
+	1850 4300 2700 4300
+Wire Wire Line
+	1700 4300 1750 4300
+Wire Wire Line
+	1750 4300 1750 4200
+Wire Wire Line
+	2900 3900 2700 3900
+Wire Wire Line
+	2700 3900 2700 4100
+Connection ~ 2700 4100
 $EndSCHEMATC
