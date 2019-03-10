@@ -133,21 +133,8 @@ Wire Wire Line
 	3400 4300 3400 4750
 Wire Wire Line
 	3400 4750 3500 4750
-$Comp
-L power:GNDREF #PWR0119
-U 1 1 5C87B557
-P 4050 5500
-F 0 "#PWR0119" H 4050 5250 50  0001 C CNN
-F 1 "GNDREF" H 4055 5327 50  0000 C CNN
-F 2 "" H 4050 5500 50  0001 C CNN
-F 3 "" H 4050 5500 50  0001 C CNN
-	1    4050 5500
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5600 5300 4050 5300
-Wire Wire Line
-	4050 5300 4050 5500
 Wire Wire Line
 	2450 5500 3050 5500
 Wire Wire Line
@@ -215,28 +202,6 @@ F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=926-LM2676S-50" H 4650 41
 F 8 "Texas Instruments" H 4650 4050 50  0001 L CNN "Manufacturer_Name"
 F 9 "LM2676S-5.0" H 4650 3950 50  0001 L CNN "Manufacturer_Part_Number"
 	1    3500 4550
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GNDREF #PWR0120
-U 1 1 5C8067CD
-P 8050 6150
-F 0 "#PWR0120" H 8050 5900 50  0001 C CNN
-F 1 "GNDREF" H 8055 5977 50  0000 C CNN
-F 2 "" H 8050 6150 50  0001 C CNN
-F 3 "" H 8050 6150 50  0001 C CNN
-	1    8050 6150
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GNDREF #PWR0121
-U 1 1 5C806E0E
-P 8450 6150
-F 0 "#PWR0121" H 8450 5900 50  0001 C CNN
-F 1 "GNDREF" H 8455 5977 50  0000 C CNN
-F 2 "" H 8450 6150 50  0001 C CNN
-F 3 "" H 8450 6150 50  0001 C CNN
-	1    8450 6150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -352,11 +317,7 @@ Wire Wire Line
 Wire Wire Line
 	7700 5950 7700 6050
 Wire Wire Line
-	7700 6050 8050 6050
-Wire Wire Line
-	8050 6050 8050 6150
-Wire Wire Line
-	8450 5950 8450 6150
+	8450 5950 8450 6050
 Connection ~ 8650 4550
 Wire Wire Line
 	1100 4650 1700 4650
@@ -433,4 +394,40 @@ Wire Wire Line
 Wire Wire Line
 	2700 3900 2700 4100
 Connection ~ 2700 4100
+Wire Wire Line
+	7700 6050 6400 6050
+Wire Wire Line
+	6400 6050 6400 5300
+Connection ~ 7700 6050
+Connection ~ 6400 5300
+Wire Wire Line
+	7700 6050 8450 6050
+$Comp
+L power:GNDREF #PWR?
+U 1 1 5C85FDB7
+P 3050 5650
+F 0 "#PWR?" H 3050 5400 50  0001 C CNN
+F 1 "GNDREF" H 3055 5477 50  0000 C CNN
+F 2 "" H 3050 5650 50  0001 C CNN
+F 3 "" H 3050 5650 50  0001 C CNN
+	1    3050 5650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 5500 3050 5650
+$Comp
+L Connector:Screw_Terminal_01x01 J?
+U 1 1 5C86EF16
+P 4950 3750
+F 0 "J?" V 4916 3662 50  0000 R CNN
+F 1 "Screw_Terminal_01x01" V 4825 3662 50  0000 R CNN
+F 2 "" H 4950 3750 50  0001 C CNN
+F 3 "~" H 4950 3750 50  0001 C CNN
+	1    4950 3750
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4800 4750 4950 4750
+Wire Wire Line
+	4950 4750 4950 3950
 $EndSCHEMATC
