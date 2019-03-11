@@ -332,7 +332,7 @@ Wire Wire Line
 	3050 4300 2700 4300
 Connection ~ 3050 5500
 Wire Wire Line
-	3050 5500 3750 5500
+	3050 5500 3400 5500
 Wire Wire Line
 	8650 4550 10000 4550
 Wire Wire Line
@@ -403,19 +403,6 @@ Connection ~ 6400 5300
 Wire Wire Line
 	7700 6050 8450 6050
 $Comp
-L power:GNDREF #PWR?
-U 1 1 5C85FDB7
-P 3050 5650
-F 0 "#PWR?" H 3050 5400 50  0001 C CNN
-F 1 "GNDREF" H 3055 5477 50  0000 C CNN
-F 2 "" H 3050 5650 50  0001 C CNN
-F 3 "" H 3050 5650 50  0001 C CNN
-	1    3050 5650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3050 5500 3050 5650
-$Comp
 L Connector:Screw_Terminal_01x01 J?
 U 1 1 5C86EF16
 P 4950 3750
@@ -430,4 +417,20 @@ Wire Wire Line
 	4800 4750 4950 4750
 Wire Wire Line
 	4950 4750 4950 3950
+$Comp
+L power:Earth #PWR?
+U 1 1 5C86ED5A
+P 3400 5650
+F 0 "#PWR?" H 3400 5400 50  0001 C CNN
+F 1 "Earth" H 3400 5500 50  0001 C CNN
+F 2 "" H 3400 5650 50  0001 C CNN
+F 3 "~" H 3400 5650 50  0001 C CNN
+	1    3400 5650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 5650 3400 5500
+Connection ~ 3400 5500
+Wire Wire Line
+	3400 5500 3750 5500
 $EndSCHEMATC

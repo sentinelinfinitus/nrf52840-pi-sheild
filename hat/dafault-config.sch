@@ -437,10 +437,6 @@ Wire Wire Line
 	10100 800  10250 800 
 Wire Wire Line
 	10250 800  10250 950 
-Text GLabel 10650 800  2    50   Input ~ 0
-rf
-Wire Wire Line
-	10250 800  10650 800 
 Connection ~ 10250 800 
 Text GLabel 7900 3150 0    50   Input ~ 0
 Vbus
@@ -585,4 +581,30 @@ Wire Wire Line
 Connection ~ 8000 2850
 Wire Wire Line
 	8000 2850 7900 2850
+$Comp
+L Connector:Conn_Coaxial J?
+U 1 1 5C8668E2
+P 11000 800
+F 0 "J?" H 11099 776 50  0000 L CNN
+F 1 "Conn_Coaxial" H 11099 685 50  0000 L CNN
+F 2 "" H 11000 800 50  0001 C CNN
+F 3 " ~" H 11000 800 50  0001 C CNN
+	1    11000 800 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10250 800  10800 800 
+$Comp
+L power:Earth #PWR?
+U 1 1 5C8694A0
+P 11000 1050
+F 0 "#PWR?" H 11000 800 50  0001 C CNN
+F 1 "Earth" H 11000 900 50  0001 C CNN
+F 2 "" H 11000 1050 50  0001 C CNN
+F 3 "~" H 11000 1050 50  0001 C CNN
+	1    11000 1050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11000 1000 11000 1050
 $EndSCHEMATC
