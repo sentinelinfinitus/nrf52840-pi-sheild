@@ -19,34 +19,34 @@ rpi(5v)(pin2)
 Text GLabel 2900 4100 2    50   Input ~ 0
 rpi(GND)(pin6)
 $Comp
-L pspice:CAP C?
+L Device:C C19
 U 1 1 5C8776E3
 P 2450 5250
-F 0 "C?" H 2628 5296 50  0000 L CNN
+F 0 "C19" H 2628 5296 50  0000 L CNN
 F 1 "0.47uf" H 2628 5205 50  0000 L CNN
-F 2 "" H 2450 5250 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2450 5250 50  0001 C CNN
 F 3 "" H 2450 5250 50  0001 C CNN
 	1    2450 5250
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:CP1 C?
+L Device:CP1 C17
 U 1 1 5C877F34
 P 1100 5300
-F 0 "C?" H 1215 5346 50  0000 L CNN
+F 0 "C17" H 1215 5346 50  0000 L CNN
 F 1 "15uf/50v" H 1215 5255 50  0000 L CNN
-F 2 "" H 1100 5300 50  0001 C CNN
+F 2 "Capacitor_SMD:CP_Elec_3x5.4" H 1100 5300 50  0001 C CNN
 F 3 "~" H 1100 5300 50  0001 C CNN
 	1    1100 5300
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:CP1 C?
+L Device:CP1 C18
 U 1 1 5C877FA6
 P 1750 5300
-F 0 "C?" H 1865 5346 50  0000 L CNN
+F 0 "C18" H 1865 5346 50  0000 L CNN
 F 1 "15uf/50v" H 1865 5255 50  0000 L CNN
-F 2 "" H 1750 5300 50  0001 C CNN
+F 2 "Capacitor_SMD:CP_Elec_3x5.4" H 1750 5300 50  0001 C CNN
 F 3 "~" H 1750 5300 50  0001 C CNN
 	1    1750 5300
 	1    0    0    -1  
@@ -64,45 +64,45 @@ F 4 "8v-40v" H 1115 4723 50  0000 C CNN "power input"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Schottky D?
+L Device:D_Schottky D1
 U 1 1 5C8798B5
 P 5600 5150
-F 0 "D?" V 5554 5229 50  0000 L CNN
+F 0 "D1" V 5554 5229 50  0000 L CNN
 F 1 "SR305" V 5645 5229 50  0000 L CNN
-F 2 "" H 5600 5150 50  0001 C CNN
+F 2 "Diode_SMD:D_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5600 5150 50  0001 C CNN
 F 3 "~" H 5600 5150 50  0001 C CNN
 	1    5600 5150
 	0    1    1    0   
 $EndComp
 $Comp
-L pspice:CAP C?
+L Device:C C20
 U 1 1 5C87999F
 P 5600 4550
-F 0 "C?" H 5422 4504 50  0000 R CNN
+F 0 "C20" H 5422 4504 50  0000 R CNN
 F 1 "0.01uf" H 5422 4595 50  0000 R CNN
-F 2 "" H 5600 4550 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5600 4550 50  0001 C CNN
 F 3 "" H 5600 4550 50  0001 C CNN
 	1    5600 4550
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:L L?
+L Device:L L5
 U 1 1 5C87ADF0
 P 6200 4900
-F 0 "L?" V 6390 4900 50  0000 C CNN
+F 0 "L5" V 6390 4900 50  0000 C CNN
 F 1 "10uH" V 6299 4900 50  0000 C CNN
-F 2 "" H 6200 4900 50  0001 C CNN
+F 2 "Inductor_SMD:L_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6200 4900 50  0001 C CNN
 F 3 "~" H 6200 4900 50  0001 C CNN
 	1    6200 4900
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:CP1 C?
+L Device:CP1 C21
 U 1 1 5C87B06D
 P 6400 5150
-F 0 "C?" H 6515 5196 50  0000 L CNN
+F 0 "C21" H 6515 5196 50  0000 L CNN
 F 1 "180uf/16v" H 6515 5105 50  0000 L CNN
-F 2 "" H 6400 5150 50  0001 C CNN
+F 2 "Capacitor_SMD:CP_Elec_3x5.3" H 6400 5150 50  0001 C CNN
 F 3 "~" H 6400 5150 50  0001 C CNN
 	1    6400 5150
 	1    0    0    -1  
@@ -116,8 +116,6 @@ Wire Wire Line
 	6050 4900 5600 4900
 Wire Wire Line
 	5600 4900 5600 5000
-Wire Wire Line
-	5600 4800 5600 4900
 Connection ~ 5600 4900
 Wire Wire Line
 	4800 4650 5150 4650
@@ -136,17 +134,12 @@ Wire Wire Line
 Wire Wire Line
 	5600 5300 4050 5300
 Wire Wire Line
-	2450 5500 3050 5500
-Wire Wire Line
 	3750 5500 3750 5300
 Wire Wire Line
 	3750 5300 4050 5300
 Connection ~ 4050 5300
 Wire Wire Line
-	2450 5500 1750 5500
-Wire Wire Line
 	1750 5500 1750 5450
-Connection ~ 2450 5500
 Wire Wire Line
 	1750 5500 1100 5500
 Wire Wire Line
@@ -156,8 +149,6 @@ Wire Wire Line
 	1100 5150 1100 4850
 Wire Wire Line
 	1100 4850 1750 4850
-Wire Wire Line
-	2450 4850 2450 5000
 Connection ~ 1100 4850
 Wire Wire Line
 	1100 4850 1100 4650
@@ -188,12 +179,12 @@ Wire Wire Line
 Wire Wire Line
 	5350 4900 5600 4900
 $Comp
-L SamacSys_Parts:LM2676S-5.0 IC?
+L SamacSys_Parts:LM2676S-5.0 IC1
 U 1 1 5C7F86EF
 P 3500 4550
-F 0 "IC?" H 4150 4815 50  0000 C CNN
+F 0 "IC1" H 4150 4815 50  0000 C CNN
 F 1 "LM2676S-5.0" H 4150 4724 50  0000 C CNN
-F 2 "TO127P1435X457-8N" H 4650 4650 50  0001 L CNN
+F 2 "SamacSys_Parts:TO127P1435X457-8N" H 4650 4650 50  0001 L CNN
 F 3 "" H 4650 4550 50  0001 L CNN
 F 4 "IC BUCK 5V 3A" H 4650 4450 50  0001 L CNN "Description"
 F 5 "" H 4650 4350 50  0001 L CNN "Height"
@@ -208,12 +199,12 @@ Wire Wire Line
 	6400 5300 5600 5300
 Connection ~ 5600 5300
 $Comp
-L SamacSys_Parts:DMG2305UX-7 Q?
+L SamacSys_Parts:DMG2305UX-7 Q1
 U 1 1 5C807BC9
 P 8200 4400
-F 0 "Q?" V 8767 4500 50  0000 C CNN
+F 0 "Q1" V 8767 4500 50  0000 C CNN
 F 1 "DMG2305UX-7" V 8676 4500 50  0000 C CNN
-F 2 "SOT96P240X100-3N" H 8650 4350 50  0001 L CNN
+F 2 "SamacSys_Parts:SOT96P240X100-3N" H 8650 4350 50  0001 L CNN
 F 3 "https://componentsearchengine.com/Datasheets/1/DMG2305UX-7.pdf" H 8650 4250 50  0001 L CNN
 F 4 "MOSFET P-Ch 20V 5A Enhancement SOT23 Diodes Inc DMG2305UX-7 P-channel MOSFET Transistor, -3.3 A, -20 V, 3-Pin SOT-23" H 8650 4150 50  0001 L CNN "Description"
 F 5 "1" H 8650 4050 50  0001 L CNN "Height"
@@ -225,12 +216,12 @@ F 9 "DMG2305UX-7" H 8650 3650 50  0001 L CNN "Manufacturer_Part_Number"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L SamacSys_Parts:DMMT5401-7-F IC?
+L SamacSys_Parts:DMMT5401-7-F IC2
 U 1 1 5C807D70
 P 7600 5400
-F 0 "IC?" H 8050 5665 50  0000 C CNN
+F 0 "IC2" H 8050 5665 50  0000 C CNN
 F 1 "DMMT5401-7-F" H 8050 5574 50  0000 C CNN
-F 2 "SOT95P275X110-6N" H 8350 5500 50  0001 L CNN
+F 2 "SamacSys_Parts:SOT95P275X110-6N" H 8350 5500 50  0001 L CNN
 F 3 "https://componentsearchengine.com/Datasheets/1/DMMT5401-7-F.pdf" H 8350 5400 50  0001 L CNN
 F 4 "Transistor Dual PNP 150V 0.2A SOT26-6 Diodes Inc DMMT5401-7-F Dual PNP Bipolar Transistor, -200 mA, -150 V, 6-Pin SOT-26" H 8350 5300 50  0001 L CNN "Description"
 F 5 "1.1" H 8350 5200 50  0001 L CNN "Height"
@@ -242,23 +233,23 @@ F 9 "DMMT5401-7-F" H 8350 4800 50  0001 L CNN "Manufacturer_Part_Number"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R R?
+L Device:R R1
 U 1 1 5C80BF79
 P 7700 5800
-F 0 "R?" H 7770 5846 50  0000 L CNN
+F 0 "R1" H 7770 5846 50  0000 L CNN
 F 1 "10k 1% 1005" H 7770 5755 50  0000 L CNN
-F 2 "" V 7630 5800 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 7630 5800 50  0001 C CNN
 F 3 "~" H 7700 5800 50  0001 C CNN
 	1    7700 5800
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R?
+L Device:R R2
 U 1 1 5C80BFD7
 P 8450 5800
-F 0 "R?" H 8520 5846 50  0000 L CNN
+F 0 "R2" H 8520 5846 50  0000 L CNN
 F 1 "47k 1% 1005" H 8520 5755 50  0000 L CNN
-F 2 "" V 8380 5800 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 8380 5800 50  0001 C CNN
 F 3 "~" H 8450 5800 50  0001 C CNN
 	1    8450 5800
 	1    0    0    -1  
@@ -371,12 +362,12 @@ VDD_HV
 Text GLabel 2900 3900 2    50   Input ~ 0
 VSS_b7
 $Comp
-L Connector:Screw_Terminal_01x02 J?
+L Connector:Screw_Terminal_01x02 J7
 U 1 1 5C9922FF
 P 1750 4000
-F 0 "J?" V 1716 3812 50  0000 R CNN
+F 0 "J7" V 1716 3812 50  0000 R CNN
 F 1 "Screw_Terminal_01x02" V 1625 3812 50  0000 R CNN
-F 2 "" H 1750 4000 50  0001 C CNN
+F 2 "TerminalBlock:TerminalBlock_Altech_AK300-2_P5.00mm" H 1750 4000 50  0001 C CNN
 F 3 "~" H 1750 4000 50  0001 C CNN
 	1    1750 4000
 	0    -1   -1   0   
@@ -403,12 +394,12 @@ Connection ~ 6400 5300
 Wire Wire Line
 	7700 6050 8450 6050
 $Comp
-L Connector:Screw_Terminal_01x01 J?
+L Connector:Screw_Terminal_01x01 J8
 U 1 1 5C86EF16
 P 4950 3750
-F 0 "J?" V 4916 3662 50  0000 R CNN
+F 0 "J8" V 4916 3662 50  0000 R CNN
 F 1 "Screw_Terminal_01x01" V 4825 3662 50  0000 R CNN
-F 2 "" H 4950 3750 50  0001 C CNN
+F 2 "TerminalBlock_MetzConnect:TerminalBlock_MetzConnect_360271_1x01_Horizontal_ScrewM3.0_Boxed" H 4950 3750 50  0001 C CNN
 F 3 "~" H 4950 3750 50  0001 C CNN
 	1    4950 3750
 	0    -1   -1   0   
@@ -418,10 +409,10 @@ Wire Wire Line
 Wire Wire Line
 	4950 4750 4950 3950
 $Comp
-L power:Earth #PWR?
+L power:Earth #PWR0105
 U 1 1 5C86ED5A
 P 3400 5650
-F 0 "#PWR?" H 3400 5400 50  0001 C CNN
+F 0 "#PWR0105" H 3400 5400 50  0001 C CNN
 F 1 "Earth" H 3400 5500 50  0001 C CNN
 F 2 "" H 3400 5650 50  0001 C CNN
 F 3 "~" H 3400 5650 50  0001 C CNN
@@ -433,4 +424,17 @@ Wire Wire Line
 Connection ~ 3400 5500
 Wire Wire Line
 	3400 5500 3750 5500
+Wire Wire Line
+	5600 4400 5600 4300
+Wire Wire Line
+	1750 5500 2450 5500
+Wire Wire Line
+	5600 4700 5600 4900
+Wire Wire Line
+	2450 5400 2450 5500
+Connection ~ 2450 5500
+Wire Wire Line
+	2450 5500 3050 5500
+Wire Wire Line
+	2450 4850 2450 5100
 $EndSCHEMATC
