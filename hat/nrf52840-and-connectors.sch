@@ -756,11 +756,21 @@ Wire Wire Line
 Wire Wire Line
 	1950 3200 2100 3200
 Wire Wire Line
-	2100 3400 1950 3400
+	2100 3400 2000 3400
 Wire Wire Line
-	1950 3600 2100 3600
+	1950 3600 2000 3600
 Wire Wire Line
 	2100 3800 1950 3800
 Wire Wire Line
 	4300 3500 4500 3500
+Text GLabel 3350 7000 0    50   Input ~ 0
+1.3vsup_decup(dec4)
+Wire Wire Line
+	2000 3600 2000 3400
+Connection ~ 2000 3600
+Wire Wire Line
+	2000 3600 2100 3600
+Connection ~ 2000 3400
+Wire Wire Line
+	2000 3400 1950 3400
 $EndSCHEMATC
