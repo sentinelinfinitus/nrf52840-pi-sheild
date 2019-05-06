@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:hat-cache
-EELAYER 26 0
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -482,9 +482,11 @@ $EndComp
 Wire Wire Line
 	11100 1750 11100 1800
 $Comp
-L SamacSys_Parts:CONUFL001-SMD ANT1
+L hat-rescue:CONUFL001-SMD-SamacSys_Parts ANT1
 U 1 1 5C885D44
 P 10250 1100
+AR Path="/5C885D44" Ref="ANT1"  Part="1" 
+AR Path="/5C9FDFE4/5C885D44" Ref="ANT1"  Part="1" 
 F 0 "ANT1" H 10850 1365 50  0000 C CNN
 F 1 "CONUFL001-SMD" H 10850 1274 50  0000 C CNN
 F 2 "SamacSys_Parts:CONUFL001-SMD" H 11300 1200 50  0001 L CNN

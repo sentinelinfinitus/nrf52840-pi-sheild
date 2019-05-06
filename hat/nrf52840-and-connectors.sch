@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:hat-cache
-EELAYER 26 0
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -537,9 +537,11 @@ Wire Wire Line
 Wire Wire Line
 	2300 2800 2100 2800
 $Comp
-L Connector:Conn_ARM_JTAG_SWD_10 J6
+L hat-rescue:Conn_ARM_JTAG_SWD_10-Connector J6
 U 1 1 5C8301A2
 P 10200 4450
+AR Path="/5C8301A2" Ref="J6"  Part="1" 
+AR Path="/5CD5D522/5C8301A2" Ref="J6"  Part="1" 
 F 0 "J6" H 9760 4496 50  0000 R CNN
 F 1 "Conn_ARM_JTAG_SWD_10" H 9760 4405 50  0000 R CNN
 F 2 "Connector_PinHeader_1.27mm:PinHeader_2x05_P1.27mm_Vertical_SMD" H 10250 3900 50  0001 L TNN
